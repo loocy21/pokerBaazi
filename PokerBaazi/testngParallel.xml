@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite" parallel="tests" thread-count="2">
+	<test name="Test-Runner1">
+		<parameter name="BROWSER" value="chrome" />
+
+
+		<classes>
+			<class name="Pokerbazi.TBD007" />
+			<class name="Pokerbazi.TBD008" />
+			<class name="Pokerbazi.TBD0018" />
+			<class name="Pokerbazi.TBD0019" />
+			<class name="Pokerbazi.TBD0023" />
+		</classes>
+	</test> <!-- Test -->
+
+
+	<test name="Test-Runner2">
+		<parameter name="BROWSER" value="firefox" />
+		<classes>
+			<class name="Pokerbazi.TBD001" />
+			<class name="Pokerbazi.TBD002" />
+			<class name="Pokerbazi.TBD003" />
+			<class name="Pokerbazi.TBD004" />
+			<class name="Pokerbazi.TBD005" />
+		</classes>
+	</test> <!-- Test -->
+</suite> <!-- Suite -->
